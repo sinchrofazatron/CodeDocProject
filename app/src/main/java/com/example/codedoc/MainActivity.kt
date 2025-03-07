@@ -1,5 +1,6 @@
 package com.example.codedoc
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
@@ -7,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +26,12 @@ class MainActivity : AppCompatActivity() {
         val userPassword: EditText = findViewById(R.id.user_password)
         val userEmail: EditText = findViewById(R.id.user_email)
         val button: Button = findViewById(R.id.button_reg)
+        val linkToAuth: TextView = findViewById(R.id.link_to_auth)
+
+        linkToAuth.setOnClickListener{
+            val intent = Intent(this, authorizationActivity::class.java)
+            startActivity(intent)
+        }
 
         button.setOnClickListener{
             val login = userLogin.text.toString().trim()
