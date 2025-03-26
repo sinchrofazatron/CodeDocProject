@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">CodeDoc</string>
+    <string name="code_doc">CodeDoc</string>
+    <string name="encrypt_text">Зашифровать</string>
+    <string name="first">1</string>
+    <string name="second">2</string>
+    <string name="third">3</string>
+    <string name="appload">Загрузить файл</string>
+    <string name="next">Далее</string>
+    <string name="choose">Выберите файл</string>
+    <string name="key">Введите ключ</string>
+    <string name="decrypted_file">Результат</string>
+    <string name="decrypt">Дешифровать</string>
 </resources>
