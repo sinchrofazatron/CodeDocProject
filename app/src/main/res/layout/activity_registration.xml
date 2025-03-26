@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/blue"
     android:orientation="vertical"
-    tools:context=".authorizationActivity">
+    tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -20,48 +20,63 @@
         android:textColor="@color/pink" />
 
     <TextView
-        android:id="@+id/auth_account"
-        android:text="Войдите в аккаунт"
+        android:id="@+id/create_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="42dp"
         android:fontFamily="@font/epilepsysansbold"
+        android:text="Создайте аккаунт"
         android:textColor="#fdfdfd"
-        android:textSize="36dp"/>
+        android:textSize="36dp" />
 
     <EditText
-        android:id="@+id/user_login_auth"
-        android:hint="Логин"
-        android:inputType="text"
+        android:id="@+id/user_login"
         android:layout_width="229dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginTop="42dp"
         android:ems="10"
+        android:hint="Логин"
         android:fontFamily="@font/epilepsysans"
         android:textSize="18dp"
+        android:inputType="text"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:backgroundTint="@color/white"/>
 
     <EditText
-        android:id="@+id/user_password_auth"
-        android:inputType="textPassword"
-        android:hint="Пароль"
+        android:id="@+id/user_password"
         android:layout_width="229dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:ems="10"
+        android:hint="Пароль"
         android:fontFamily="@font/epilepsysans"
         android:textSize="18dp"
+        android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:backgroundTint="@color/white"/>
 
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="229dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Почта"
+        android:fontFamily="@font/epilepsysans"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/white"/>
+
     <Button
-        android:id="@+id/button_auth"
+        android:id="@+id/button_reg"
         android:layout_width="229dp"
         android:layout_height="50dp"
         android:fontFamily="@font/epilepsysans"
@@ -69,18 +84,18 @@
         android:textColor="#fdfdfd"
         android:layout_gravity="center"
         android:gravity="center"
-        android:layout_marginTop="119dp"
+        android:layout_marginTop="54dp"
         android:backgroundTint="@color/pink"
-        android:text="Войти"/>
+        android:text="Создать"/>
 
     <TextView
-        android:id="@+id/link_to_reg"
+        android:id="@+id/link_to_auth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/epilepsysans"
-        android:text="Зарегистрироваться"
+        android:text="Войти в аккаунт"
         android:textColor="#fdfdfd"
         android:textSize="24dp" />
 
